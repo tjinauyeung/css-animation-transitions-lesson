@@ -3,6 +3,7 @@ header {
   display: flex;
   align-items: center;
   z-index: 999;
+  width: 100vw;
 }
 
 nav {
@@ -19,4 +20,35 @@ nav li {
   display: inline-block;
   margin-right: 35px;
   font-size: 28px;
+}
+
+#hidden_menu {
+  position: fixed;
+  background: #FDFDFD;
+  display: flex;
+  align-items: center;
+  color: #222;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  margin: auto;
+  transform: translateY(-100%);
+  transition: transform 220ms ease-in-out;
+  z-index: 9999;
+}
+
+#hidden_menu nav {
+  width: 1440px;
+  margin: auto;
+}
+
+#hidden_menu.is-active {
+  transform: translateY(0);
+  transition: transform 220ms ease-in-out;
+}
+
+#hidden_menu nav li {
+  font-size: 16px;
+  margin-right: 22px;
 }
