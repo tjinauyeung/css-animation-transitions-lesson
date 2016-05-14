@@ -27,13 +27,14 @@
   line-height: 40px;
   text-align: center;
   font-weight: normal;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .about p {
   line-height: 150%;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 100;
+  margin-top: -43px;
   text-align: center;
 }
 
@@ -47,7 +48,7 @@
 .about article:first-child p {
   font-size: 18px;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 45px;
   opacity: 0.9;
 }
 
