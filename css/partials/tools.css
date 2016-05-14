@@ -1,0 +1,26 @@
+.tools {
+  background: #E72000;
+}
+
+  .tools section {
+    display: flex;
+    min-height: 800px;
+    padding: 100px 0 100px;
+    color: #fff;
+  }
+  .tools ul, h1 {
+    list-style-type: none;
+    flex: 1;
+  }
+  .tools ul li:first-child {
+    font-size: 200px;
+    min-height: 300px;
+    text-align: center;
+  }
+  .tools ul li:nth-child(2) {
+    line-height: 150%;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+  }
+    .tools__title { font-size: 48px; margin: 0;  }

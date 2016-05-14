@@ -1,18 +1,17 @@
-* {
-  box-sizing: border-box;
-}
+@import url('fonts.css');
+@import url('partials/header.css');
+@import url('partials/landing.css');
+@import url('partials/tools.css');
+@import url('partials/work.css');
+@import url('partials/resume.css');
+@import url('partials/contact.css');
+@import url('partials/footer.css');
 
-h1, h2 { margin: 0; }
 
 html {
-  font-family: 'Euclid', 'Helvetica', 'Helvetica-Neue', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Mark Pro', 'Helvetica', 'Helvetica-Neue', 'Helvetica Neue', Arial, sans-serif;
   font-weight: bold;
 }
-
-/*.container {
-  max-width: 1440px;
-  margin: auto;
-}*/
 
 header, 
 .landing, 
@@ -25,85 +24,12 @@ header,
   margin: auto;
 }
 
-header {
-  height: 100px;
-  display: flex;
-  align-items: center;
+h1, h2, h3 { margin: 0; }
+
+.work__container {   
+  background: #E54B4B; 
+  padding: 100px 0 100px;
 }
-
-nav {
-  list-style-type: none;
-  padding-left: 45px;
-}
-  nav li {
-    display: inline-block;
-    margin-right: 45px;
-    font-size: 28px;
-  }
-
-.landing {
-  min-height: 100vh;
-  margin-top: -100px; /*readjusting position because of header*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-/*  position: fixed;
-  left: 0; right: 0;
-  z-index: 0;*/
-}
-  .landing h1 {
-    max-width: 700px;
-    font-size: 64px;
-  }
-  .landing h2 {
-    font-size: 64px;
-    font-weight: 300;
-    line-height: 120%;
-  }
-  .landing .arrow {
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    right: 0;
-    font-size: 60px;
-    text-align: center;
-    transition: transform 100ms ease-in-out;
-    cursor: pointer;
-
-  }
-  .landing .arrow:hover {
-    transform: translateY(10px);
-    transition: transform 150ms ease-in-out;
-  }
-
-.tools {
-  background: #E72000;
-/*  margin-top: 100vh;*/
-}
-
-  .tools section {
-    display: flex;
-    height: 800px;
-    padding-top: 100px;
-    color: #fff;
-  }
-  .tools ul, h1 {
-    list-style-type: none;
-    flex: 1;
-  }
-  .tools ul li:first-child {
-    font-size: 200px;
-    min-height: 300px;
-  }
-  .tools ul li:nth-child(2) {
-    line-height: 150%;
-    font-size: 18px;
-    font-weight: 100;
-  }
-    .tools__title { font-size: 48px; margin: 0;  }
-
-.work__container {   background: #E54B4B;  }
 .work {
   color: #fff;
   display: flex;
@@ -116,6 +42,12 @@ nav {
     max-width: calc(100%/3);
     min-height: 300px;
     padding: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .work__item:hover {
+    background: #fff;
+    color: #E54B4B;
   }
   .work__item p:first-child {
     font-weight: 100;
@@ -127,9 +59,40 @@ nav {
   }
   .work__item p:nth-child(3) {
     font-weight: 100;
-    color: #fff;
     opacity: 0.8;
   }
+
+.resume {
+  background: blue;
+  padding: 100px 0 100px;
+}
+
+.resume section {
+  display: flex;
+  min-height: 800px;
+  color: #fff;
+}
+.resume section .title {
+  flex: 1;
+  font-size: 48px;
+  line-height: 200%;
+}
+.resume section .right_col {
+  flex: 3;
+}
+
+.resume section h2 {
+  font-size: 48px;
+}
+.resume section h2:nth-child(2){
+  font-weight: normal;
+}
+
+.resume section p {
+  font-size: 22px;
+  font-weight: normal;
+}
+
 
 .about {
   min-height: 100vh;
@@ -167,38 +130,6 @@ nav {
     font-weight: 400;
     margin-top: 20px;
   }
-
-.resume {
-  
-}
-
-.resume section {
-  display: flex;
-  align-items: flex-start;
-  height: 800px;
-}
-.resume section ul:first-child {
-  flex: 1;
-  list-style-type: none;
-  font-size: 24px;
-  line-height: 200%;
-}
-.resume section ul:nth-child(2) span {
-  font-size: 12px;
-  font-weight: lighter;
-  line-height: 12px;
-}
-
-.resume section ul:nth-child(2) {
-  flex: 3;
-  list-style-type: none;
-  font-size: 36px;
-  line-height: 200%;
-}
-
-.resume section ul:first-child { font-size: 48px; margin: 0; }
-
-
 
 footer {
   background: #E72000;

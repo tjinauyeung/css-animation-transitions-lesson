@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Mark Pro';
+	src: url('../fonts/ff_mark_pro.eot') format('eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Mark Pro';
+	src: url('../fonts/ff_mark_pro_bold.eot') format('eot');
+	font-weight: bold;
+	font-style: normal;
+}
