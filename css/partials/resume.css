@@ -1,0 +1,40 @@
+.resume {
+  background: blue;
+  padding: 100px 0 100px;
+}
+
+.resume section {
+  display: flex;
+  color: #fff;
+}
+.resume .title {
+  flex: 1;
+}
+
+.resume .content {
+  flex: 3;
+}
+
+.resume article {
+  padding: 0 50px 0;
+  margin: 0 0 75px;
+}
+
+.resume h2 {
+  font-size: 48px;
+}
+
+.resume h2:nth-child(2){
+  font-weight: normal;
+  line-height: 180%;
+}
+
+.resume p {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 150%;
+}
+.resume span {
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 2px;
+}

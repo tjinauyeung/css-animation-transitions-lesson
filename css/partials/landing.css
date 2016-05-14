@@ -5,6 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #fdfdfd url('../../images/ben.jpg') no-repeat 110% bottom / contain;
+}
+
+.landing section {
+  width: 100%;
+  max-width: 800px;
 }
 
 .landing h1 {
@@ -15,7 +21,9 @@
 .landing h2 {
   font-size: 64px;
   font-weight: 300;
+  margin-top: 20px;
   line-height: 120%;
+  letter-spacing: -1px;
 }
 
 .landing .arrow {

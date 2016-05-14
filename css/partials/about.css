@@ -1,0 +1,68 @@
+.about {
+  background: blue;
+}
+
+.about section {
+  display: flex;
+  padding: 0;
+  color: #fff;
+}
+
+.about .title, .about article {
+  flex: 1;
+}
+
+.about article {
+  padding: 100px 50px 100px;
+}
+
+.about h2 {
+  font-size: 200px;
+  min-height: 300px;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 48px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.about p {
+  line-height: 150%;
+  font-size: 22px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.about article:first-child {
+  padding: 100px 0 100px;
+  margin-right: 100px;
+}
+
+.about article:first-child:hover { background: none; }
+
+.about article:first-child p {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 50px;
+  opacity: 0.9;
+}
+
+.about article:hover {
+  background: #E54B4B;
+  cursor: pointer;
+}
+
+.about article:not(:nth-child(1)):hover p {
+  opacity: 1;
+  transform: translate(0);
+  transition: all 220ms ease-in-out;
+}
+
+.about article:not(:nth-child(1)) p{
+  opacity: 0;
+  transform: translateY(40px);
+}

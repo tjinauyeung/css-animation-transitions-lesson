@@ -1,0 +1,26 @@
+footer {
+  background: #f9f9f9;
+  position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+}
+
+footer section {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #222;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+footer ul {
+  list-style-type: none;
+  font-size: 36px;
+}
+
+footer i {
+	margin-right: 20px;
+}

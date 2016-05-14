@@ -1,0 +1,33 @@
+.btn {
+	border: 4px solid #E54B4B;
+	min-width: 240px;
+	height: 70px;
+	background: #E54B4B;
+	color: #FFF;
+	display: inline-block;
+	margin-right: 5px;
+	padding: 0 25px 0;
+	line-height: 20px;
+	font-family: 'Mark Pro';
+	font-size: 22px;
+	font-weight: bold;
+	text-align: left;
+	transition: all 50ms ease-in-out;
+	overflow: hidden;
+}
+
+.btn i {
+	transform: translateY(100px);
+	float: right;
+}
+
+.btn:hover {
+	background: #FFF;
+	color: #E54B4B;
+	transition: all 150ms ease-in-out;
+}
+
+.btn:hover i {
+	transform: translateY(0);
+	transition: transform 150ms ease-in-out;
+}

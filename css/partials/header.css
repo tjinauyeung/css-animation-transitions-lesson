@@ -9,6 +9,10 @@ nav {
   padding-left: 45px;
 }
 
+nav li:first-child {
+	font-weight: bold;
+}
+
 nav li {
   display: inline-block;
   margin-right: 45px;

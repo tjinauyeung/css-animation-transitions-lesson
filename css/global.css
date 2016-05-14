@@ -1,0 +1,34 @@
+html {
+  font-family: 'Mark Pro', 'Helvetica', 'Helvetica-Neue', 'Helvetica Neue', Arial, sans-serif;
+}
+
+header, 
+.landing section, 
+.about section,
+.tools section,
+.work section,
+.resume section,
+.contact section,
+footer section {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.container {
+	position: relative;
+}
+
+body {
+	background: #222;
+}
+
+h1, h2, h3, h4, p { 
+	margin: 0; 
+	line-height: 100%;
+}
+
+.title {
+	font-size: 48px;
+	line-height: 100%;
+	margin: 0;
+}
