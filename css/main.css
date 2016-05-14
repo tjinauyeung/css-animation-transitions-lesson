@@ -18,6 +18,7 @@ header,
 .landing, 
 .tools section,
 .about,
+.work,
 .resume section,
 .footer {
   max-width: 1440px;
@@ -102,24 +103,18 @@ nav {
   }
     .tools__title { font-size: 48px; margin: 0;  }
 
+.work__container {   background: #E54B4B;  }
 .work {
   color: #fff;
+  display: flex;
 }
 
-.work section { display: flex; width: 100vw; overflow: scroll;}
+.work section { display: flex; flex-wrap: wrap; flex: 3;}
+.work section h1 { flex: 1; }
 
-/*  .work__item:nth-child(1) { background: #E54B4B; }
-  .work__item:nth-child(2) { background: #E8846B; }
-  .work__item:nth-child(3) { background: #0082C8; }
-  .work__item:nth-child(4) { background: #16528E; }
-  .work__item:nth-child(5) { background: #136A6E; }
-  .work__item:nth-child(6) { background: #A2C5BF; }
-  .work__item:nth-child(7) { background: #72616E; }
-  .work__item:nth-child(8) { background: #fff4c7; }
-*/
   .work__item {
-    min-width: calc(100%/4);
-    min-height: 800px;
+    max-width: calc(100%/3);
+    min-height: 300px;
     padding: 40px;
   }
   .work__item p:first-child {
@@ -182,12 +177,25 @@ nav {
   align-items: flex-start;
   height: 800px;
 }
-.resume section ul {
+.resume section ul:first-child {
   flex: 1;
   list-style-type: none;
   font-size: 24px;
   line-height: 200%;
 }
+.resume section ul:nth-child(2) span {
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 12px;
+}
+
+.resume section ul:nth-child(2) {
+  flex: 3;
+  list-style-type: none;
+  font-size: 36px;
+  line-height: 200%;
+}
+
 .resume section ul:first-child { font-size: 48px; margin: 0; }
 
 
