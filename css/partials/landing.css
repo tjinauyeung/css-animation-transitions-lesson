@@ -5,12 +5,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fdfdfd url('../../images/ben.jpg') no-repeat 110% bottom / contain;
+  background: #fdfdfd;
+  position: relative;
+  z-index: 1;
+}
+
+.landing_background {
+  position: absolute;
+  width: 50vw;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(2%);
+}
+
+.landing_background.has-landed {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 800ms ease-in-out;
 }
 
 .landing section {
   width: 100%;
+  padding-left: 50px;
   max-width: 800px;
+  z-index: 3;
 }
 
 .landing h1 {
@@ -35,6 +55,7 @@
   text-align: center;
   transition: transform 100ms ease-in-out;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .landing .arrow:hover {

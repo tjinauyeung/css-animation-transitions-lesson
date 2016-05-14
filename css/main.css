@@ -11,3 +11,6 @@
 @import url('partials/resume.css');
 @import url('partials/contact.css');
 @import url('partials/footer.css');
+
+/* MEDIA QUERIES */
+@import url('mediaqueries.css');

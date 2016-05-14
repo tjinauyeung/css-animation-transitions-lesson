@@ -9,19 +9,20 @@
 
 .work .title { 
   flex: 1; 
-  padding-top: 100px; 
+  padding: 100px 0px 0px 50px;
+  margin-right: -50px;
 }
 
 .work .content { 
+  flex: 3;
   display: flex; 
   flex-wrap: wrap; 
-  flex: 3;
 }
 
 .work__item {
   width: calc(100%/3);
   min-height: 450px;
-  padding: 50px;
+  padding: 100px 50px 50px;
   color: #fff;
   cursor: pointer;
 }
@@ -29,15 +30,6 @@
 .work__item:hover {
   background: blue;
   color: #FFF;
-}
-
-.work__item:last-child:hover {
-  background: #f7c80e;
-  color: #222;
-}
-
-.work__item:last-child h2 {
-  font-size: 60px;
 }
 
 .work__item p:first-child {
@@ -73,6 +65,23 @@
 
 @keyframes pop {
   0% { transform: scale(0); }
-  90% { transform: scale(1.3); }
+  90% { transform: scale(1.1); }
   100% { transform: scale(1); }
+}
+
+.work__item:last-child {
+  overflow: hidden;
+}
+
+.work__item:last-child:hover {
+  background: #f7c80e;
+  color: #FFF;
+}
+
+.work__item:last-child h2 {
+  font-size: 60px;
+}
+
+.work__item:last-child i {
+  font-size: 70px;
 }

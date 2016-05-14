@@ -1,0 +1,113 @@
+@media screen and (min-width: 1025px) and (max-width: 1441px) {
+	header, 
+	.about section,
+	.tools section,
+	.work section,
+	.resume section,
+	.contact section,
+	footer section {
+	  max-width: 1180px;
+	  margin: auto;
+	}
+	
+	.landing section { max-width: 900px;}
+
+	nav li,
+	footer section { 
+		font-size: 22px; 
+	}
+	.landing h1,
+	.landing h2,
+	.contact section h1,
+	.contact section p,
+	.work__item:last-child h2 { 
+		font-size: 45px; 
+	}
+	.work .title,
+	.about .title,
+	.resume .title,
+	.resume h2,
+	.about h3 {
+		font-size: 35px;
+	}
+	.contact section {
+		max-width: 750px;
+	}
+	.contact section p {
+	  margin: -45px 0 50px;
+	}
+	.btn {
+		zoom: 0.7;
+	}
+	footer ul, i,
+	.about p,
+	.work__item p,
+	.resume p {
+		zoom: 0.8;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.about section,
+	.work section,
+	.resume section,
+	.work .content {
+		flex-direction: column;
+	}
+	.work__item {
+		width: 100%;
+		padding: 50px;
+		min-height: auto;
+	}
+	.work__item i {
+		transform: scale(1);
+	}
+	.about article h1,
+	.about article p {
+		text-align: center;
+	}
+	.about article:first-child {
+		background: #E54B4B;
+	}
+	.about article:not(:nth-child(1)) p {
+		opacity: 1;
+		transform: none;
+	}
+	.about article,
+	.landing section {
+		padding: 50px;
+	}	
+}
+
+@media (max-width: 767px) {
+	nav li,
+	footer section { 
+		font-size: 12px; 
+	}
+	.landing h1,
+	.landing h2,
+	.contact section h1,
+	.contact section p,
+	.work__item:last-child h2 { 
+		font-size: 28px; 
+	}
+	.work .title,
+	.about .title,
+	.resume .title,
+	.resume h2,
+	.about h3 {
+		font-size: 16px;
+	}
+	.contact section {
+		max-width: 750px;
+	}
+	.contact section p {
+	  margin: -45px 0 50px;
+	}
+	.btn {
+		zoom: 0.7;
+	}
+	footer ul {
+		zoom: 0.8;
+	}
+}

@@ -4,6 +4,7 @@
 
 .about section {
   display: flex;
+  min-height: 80vh;
   padding: 0;
   color: #fff;
 }
@@ -23,8 +24,8 @@
 }
 
 .about h3 {
-  font-size: 48px;
-  line-height: 40px;
+  font-size: 38px;
+  line-height: 48px;
   text-align: center;
   font-weight: normal;
   margin-bottom: 30px;
@@ -39,11 +40,31 @@
 }
 
 .about article:first-child {
-  padding: 100px 0 100px;
-  margin-right: 100px;
+  padding: 100px 50px 100px;
 }
 
 .about article:first-child:hover { background: none; }
+
+.about__picture {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  position: relative;
+  display: block;
+  margin: 70px auto 50px;
+  cursor: pointer;
+}
+.about__picture img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+}
+
+.about__picture img:nth-child(1) { z-index: 2; }
+.about__picture img:nth-child(2) { z-index: 1; }
+.about article:first-child:hover img:nth-child(1) { opacity: 0; }
 
 .about article:first-child p {
   font-size: 18px;
@@ -60,7 +81,7 @@
 .about article:not(:nth-child(1)):hover p {
   opacity: 1;
   transform: translate(0);
-  transition: all 220ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 
 .about article:not(:nth-child(1)) p{

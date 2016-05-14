@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div class="container">
@@ -22,9 +23,10 @@
 
 		<!-- landing page -->
 		<div class="landing">
+			<img class="landing_background" src="images/ben.jpg">
 			<section>
 				<h1>Ben&Cats</h1>
-				<h2>Webdeveloper, 
+				<h2>Web developer, 
 				<br>Bearded man,
 				<br>Cat lover.</h2>
 			</section>
@@ -35,8 +37,11 @@
 			<section>
 				<article>
 					<h1 class="title">About me</h1>
+					<picture class="about__picture">
+						<img src="images/profile.png">
+						<img src="images/profile_hover.png">
+					</picture>
 					<p>I'm Ben. I'm a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repudiandae cumque veritatis repellat velit reprehenderit quod, quos ullam consectetur?</p>
-					<p>Libero exercitationem facilis, voluptatem dolorum, vitae voluptatibus labore quia non reprehenderit!</p>
 				</article>
 				<article>
 					<h3>Clean code</h3>
@@ -107,26 +112,9 @@
 						<i class="fa fa-globe" aria-hidden="true"></i>
 					</article>
 					<article class="work__item">
-						<p>12 May</p>
-						<h2>Social Media 
-						<br>Project</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum enim commodi magni, repellat praesentium iusto omnis.</p>
-						<i class="fa fa-github" aria-hidden="true"></i>
-						&nbsp;&nbsp;
-						<i class="fa fa-globe" aria-hidden="true"></i>
-					</article>
-					<article class="work__item">
-						<p>12 May</p>
-						<h2>jQuery
-						<br>Rocks</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis laborum ullam voluptas omnis accusantium.</p>
-						<i class="fa fa-github" aria-hidden="true"></i>
-						&nbsp;&nbsp;
-						<i class="fa fa-globe" aria-hidden="true"></i>
-					</article>
-					<article class="work__item">
 						<p>Future</p>
-						<h2>Need<br>Help ?</h2>
+						<h2>Need Help ?</h2>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
 					</article>
 				</div>
 			</section>
@@ -158,7 +146,7 @@
 		<!-- contact section  -->
 		<div class="contact">
 			<section>
-				<h1>Interested?</h1>
+				<h1 id="typed">Interested?</h1>
 				<p>Feel free to send me a mail or give me a call.</p>
 				<div>
 				<!-- insert button -->
@@ -189,13 +177,12 @@
 
 	</div>
 
-
-
-
-
-
+<!-- JS scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/typed.message.js"></script>
+<script src="js/classie.js"></script>
 <script src="js/main.js"></script>
-
 
 </body>
 </html>

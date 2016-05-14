@@ -2,11 +2,13 @@ header {
   height: 100px;
   display: flex;
   align-items: center;
+  z-index: 999;
 }
 
 nav {
   list-style-type: none;
   padding-left: 45px;
+  z-index: 999;
 }
 
 nav li:first-child {
@@ -15,6 +17,6 @@ nav li:first-child {
 
 nav li {
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 35px;
   font-size: 28px;
 }
