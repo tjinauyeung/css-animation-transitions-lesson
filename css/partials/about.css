@@ -1,5 +1,5 @@
 .about {
-  background: blue;
+  background: #1319b5;
 }
 
 .about section {
@@ -42,8 +42,6 @@
 .about article:first-child {
   padding: 100px 50px 100px;
 }
-
-.about article:first-child:hover { background: none; }
 
 .about__picture {
   width: 130px;

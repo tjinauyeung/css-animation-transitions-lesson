@@ -28,7 +28,7 @@
 }
 
 .work__item:hover {
-  background: blue;
+  background: #f46e5f;
   color: #FFF;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .work__item:last-child:hover {
-  background: #f7c80e;
+  background: #f4af24;
   color: #FFF;
 }
 
