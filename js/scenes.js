@@ -7,14 +7,14 @@
  		offset: 300
  	})
 	.setClassToggle('#hidden_menu', 'is-active')
-	.addIndicators()
+	// .addIndicators() 
 	.addTo(controller);
 
 	new ScrollMagic.Scene({
 		triggerElement: "#resume"
 	})
 	.setClassToggle('.resume_article', 'is-active')
-	.addIndicators()
+	// .addIndicators()
 	.addTo(controller);
 
 })();
