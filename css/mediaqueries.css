@@ -1,3 +1,8 @@
+/*
+Needs refactoring
+*/
+
+
 @media screen and (min-width: 1025px) and (max-width: 1441px) {
 	header, 
 	.about section,
@@ -96,18 +101,34 @@
 	.resume .title,
 	.resume h2,
 	.about h3 {
+		font-size: 24px;
+	}
+	.resume p {
 		font-size: 16px;
 	}
 	.contact section {
 		max-width: 750px;
 	}
 	.contact section p {
-	  margin: -45px 0 50px;
+	  margin: -35px 0 50px;
 	}
 	.btn {
 		zoom: 0.7;
+		margin: 5px;
 	}
-	footer ul {
-		zoom: 0.8;
+	footer ul { display: none; }
+	footer section { font-size: 10px; padding: 15px; line-height: 250%; text-align: center;} 
+	#hidden_menu { display: none; }
+	.landing_background {
+	  position: absolute;
+	  width: auto;
+	  height: 40vh;
+	  bottom: 0;
+	  right: 0;
+	  z-index: 2;
+	  opacity: 0;
+	  transform: translateX(2%);
 	}
+	nav li { margin-right: 10px; font-size: 12px; }
+	.resume_article { opacity: 1; }
 }
