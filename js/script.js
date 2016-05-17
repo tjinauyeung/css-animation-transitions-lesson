@@ -3,7 +3,7 @@
 	var landingBg = document.querySelector('.landing_background'),
 			about = document.querySelector('#about'),
 			menu = document.querySelector('#hidden_menu'),
-			resumeArticle = document.querySelectorAll('.resume_article');
+			resumeArticles = document.querySelectorAll('.resume_article');
 
 	// FADE-IN HERO IMAGE ON LOAD
 	setTimeout(function(){
@@ -25,14 +25,15 @@
 	new Waypoint({
 		element: document.querySelector('#resume'),
 		handler: function(direction) {
-			var articlesAmount = resumeArticle.length;
+			// converting nodelist into array to use forEach function
+			var resumeArray = [].slice.call(resumeArticles);
 
 			if ( direction === "down" ) {
-				resumeArticle.forEach(function(article){
+				resumeArray.forEach(function(article){
 					article.classList.add('is-active')
 				});
 			} else {
-				resumeArticle.forEach(function(article){
+				resumeArray.forEach(function(article){
 					article.classList.remove('is-active')
 				});
 			}
